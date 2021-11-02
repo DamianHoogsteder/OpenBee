@@ -39,3 +39,4 @@ jobs:
         context: 'MarketService'
         push: true
         tags: ${{ secrets.DOCKER_USERNAME }}/marketservice:latest
+
