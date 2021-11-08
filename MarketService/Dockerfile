@@ -10,4 +10,4 @@ RUN dotnet publish -c Release -o out
 FROM mcr.microsoft.com/dotnet/aspnet:3.1
 WORKDIR /app
 COPY --from=build-env /app/out .
-ENTRYPOINT ["dotnet", "MarketService.dll"]
+ENTRYPOINT ["dotnet", "MarketService.dll", "--server.urls", "http://+:80;https://+:443"]
