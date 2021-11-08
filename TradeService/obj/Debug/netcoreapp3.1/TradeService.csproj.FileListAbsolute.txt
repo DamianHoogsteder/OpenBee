@@ -1,0 +1,9 @@
+C:\Users\Damia\source\repositories\OpenBee\TradeService\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Damia\source\repositories\OpenBee\TradeService\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Damia\source\repositories\OpenBee\TradeService\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Damia\source\repositories\OpenBee\TradeService\obj\Debug\netcoreapp3.1\TradeService.csprojAssemblyReference.cache
+C:\Users\Damia\source\repositories\OpenBee\TradeService\obj\Debug\netcoreapp3.1\TradeService.AssemblyInfoInputs.cache
+C:\Users\Damia\source\repositories\OpenBee\TradeService\obj\Debug\netcoreapp3.1\TradeService.AssemblyInfo.cs
+C:\Users\Damia\source\repositories\OpenBee\TradeService\obj\Debug\netcoreapp3.1\TradeService.RazorTargetAssemblyInfo.cache
+C:\Users\Damia\source\repositories\OpenBee\TradeService\obj\Debug\netcoreapp3.1\staticwebassets\TradeService.StaticWebAssets.Manifest.cache
+C:\Users\Damia\source\repositories\OpenBee\TradeService\obj\Debug\netcoreapp3.1\staticwebassets\TradeService.StaticWebAssets.xml
