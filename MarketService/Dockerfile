@@ -6,7 +6,7 @@ ENV ASPNETCORE_URLS=http://+:80
 
 FROM mcr.microsoft.com/dotnet/sdk:3.1-focal AS build
 WORKDIR /src
-COPY ["MarketService/MarketService.csproj", "MarketService/"]
+COPY ["MarketService.csproj", "./"]
 RUN dotnet restore "MarketService/MarketService.csproj"
 COPY . .
 RUN dotnet build "MarketService.csproj" -c Release -o /app/build
