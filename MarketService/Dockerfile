@@ -1,21 +1,20 @@
-FROM mcr.microsoft.com/dotnet/aspnet:3.1 AS base
+FROM mcr.microsoft.com/dotnet/aspnet:3.1-focal AS base
 WORKDIR /app
 EXPOSE 80
-EXPOSE 443
 
-FROM mcr.microsoft.com/dotnet/sdk:3.1 AS build-env
-WORKDIR /app
+ENV ASPNETCORE_URLS=http://+:80
 
-COPY *.csproj ./
-RUN dotnet restore 
-
+FROM mcr.microsoft.com/dotnet/sdk:3.1-focal AS build
+WORKDIR /src
+COPY ["MarketService/MarketService.csproj", "MarketService/"]
+RUN dotnet restore "MarketService/MarketService.csproj"
 COPY . .
-RUN dotnet build
+RUN dotnet build "MarketService.csproj" -c Release -o /app/build
 
-FROM build-env AS publish
-RUN dotnet publish "MarketService.csproj" -c Release -o out
+FROM build AS publish
+RUN dotnet publish "MarketService.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
-COPY --from=publish /app/out .
+COPY --from=publish /app/publish .
 ENTRYPOINT ["dotnet", "MarketService.dll"]
