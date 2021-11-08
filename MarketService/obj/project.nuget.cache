@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "WoZmZvi4m0KbUQb37lu3XpYLq9mmDiTZOexM+an+5la6LL/EG8dY+XvaTByWAWM7CQgbHjxjyWac2lta5tvCUQ==",
+  "dgSpecHash": "hFNOu6qIIXbcIguYh/NHrPhCUUwp5a2L6LS0JiLP7KQNMuX4W8gYF7xUzAQIzwAY4bBcJl88BH6QvC78FQBLKg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Damia\\OneDrive\\Bureaublad\\schol\\Semester 3\\Sem3_Backend\\SEM3_Backend\\MarketService\\MarketService.csproj",
+  "projectFilePath": "C:\\Users\\Damia\\source\\repositories\\OpenBee\\MarketService\\MarketService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Damia\\.nuget\\packages\\automapper\\10.1.1\\automapper.10.1.1.nupkg.sha512",
     "C:\\Users\\Damia\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.1.1\\automapper.extensions.microsoft.dependencyinjection.8.1.1.nupkg.sha512",

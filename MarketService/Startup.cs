@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using MarketService.DAL;
+using MarketService.DAL.ItemData;
+using MarketService.Logic;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -40,7 +42,10 @@ namespace MarketService
                 opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")
                 ));
             services.AddScoped<IMarketRepo, MarketRepo>();
+            services.AddScoped<IItemRepo, ItemRepo>();
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+            services.AddScoped<MarketLogic>();
+            services.AddScoped<ItemLogic>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

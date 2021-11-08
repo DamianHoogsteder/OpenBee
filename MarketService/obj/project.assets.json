@@ -5900,11 +5900,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Damia\\OneDrive\\Bureaublad\\schol\\Semester 3\\Sem3_Backend\\SEM3_Backend\\MarketService\\MarketService.csproj",
+      "projectUniqueName": "C:\\Users\\Damia\\source\\repositories\\OpenBee\\MarketService\\MarketService.csproj",
       "projectName": "MarketService",
-      "projectPath": "C:\\Users\\Damia\\OneDrive\\Bureaublad\\schol\\Semester 3\\Sem3_Backend\\SEM3_Backend\\MarketService\\MarketService.csproj",
+      "projectPath": "C:\\Users\\Damia\\source\\repositories\\OpenBee\\MarketService\\MarketService.csproj",
       "packagesPath": "C:\\Users\\Damia\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Damia\\OneDrive\\Bureaublad\\schol\\Semester 3\\Sem3_Backend\\SEM3_Backend\\MarketService\\obj\\",
+      "outputPath": "C:\\Users\\Damia\\source\\repositories\\OpenBee\\MarketService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Damia\\AppData\\Roaming\\NuGet\\NuGet.Config",
