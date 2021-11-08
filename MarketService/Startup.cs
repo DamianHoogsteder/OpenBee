@@ -36,15 +36,22 @@ namespace MarketService
                     builder.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader();
                 });
             });
+
             services.AddControllers();
+
             services.AddDbContext<MarketDatabaseContext>
                 (
                 opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")
                 ));
+
             services.AddScoped<IMarketRepo, MarketRepo>();
+
             services.AddScoped<IItemRepo, ItemRepo>();
+
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+
             services.AddScoped<MarketLogic>();
+
             services.AddScoped<ItemLogic>();
         }
 
