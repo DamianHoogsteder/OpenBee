@@ -26,19 +26,9 @@ namespace MarketService.DAL
             return _context.Markets.Where(i => i.Id == id).Include(m => m.Items);
         }
 
-        public IEnumerable<Items> GetAllItems()
-        {
-            return _context.Items.ToList();
-        }
-
         public Market GetMarketById(int id)
         {
             return _context.Markets.FirstOrDefault(p => p.Id == id);
-        }
-
-        public Items GetItemById(int id)
-        {
-            return _context.Items.FirstOrDefault(i => i.ID == id);
         }
 
         public bool SaveChanges()

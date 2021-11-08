@@ -13,8 +13,6 @@ namespace MarketService.DAL
         IEnumerable<Market> GetAllItemsByMarketId(int id);
         IEnumerable<Market> GetAllMarkets();
         Market GetMarketById(int id);
-        IEnumerable<Items> GetAllItems();
-        Items GetItemById(int id);
 
     }
 }
