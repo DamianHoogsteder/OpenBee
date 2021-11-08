@@ -9,7 +9,7 @@ COPY *.csproj ./
 RUN dotnet restore 
 
 COPY . .
-RUN dotnet build "MarketService.csproj" -c Release -o /app
+RUN dotnet build
 
 FROM build-env AS publish
 RUN dotnet publish "MarketService.csproj" -c Release -o out
