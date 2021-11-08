@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using MarketService.DAL;
+using MarketService.Logic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace MarketService.Controllers
@@ -12,19 +13,19 @@ namespace MarketService.Controllers
     [ApiController]
     public class ItemsController : Controller
     {
-        private readonly IMarketRepo _repository;
+        private readonly ItemLogic _itemLogic;
         private readonly IMapper _mapper;
 
-        public ItemsController(IMarketRepo reporitory, IMapper mapper)
+        public ItemsController(ItemLogic itemLogic, IMapper mapper)
         {
-            _repository = reporitory;
+            _itemLogic = itemLogic;
             _mapper = mapper;
         }
 
         [HttpGet]
         public ActionResult GetItemsByMarket()
         {
-            var marketItems = _repository.GetAllItems();
+            var marketItems = _itemLogic.GetAllItems();
 
             return Ok(marketItems);
         }
@@ -33,7 +34,7 @@ namespace MarketService.Controllers
         [Route("{id}")]
         public ActionResult GetItemsByMarket(int id)
         {
-            var item = _repository.GetItemById(id);
+            var item = _itemLogic.GetItemByID(id);
 
             return Ok(item);
         }
