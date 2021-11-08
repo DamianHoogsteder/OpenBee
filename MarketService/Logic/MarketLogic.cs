@@ -30,5 +30,10 @@ namespace MarketService.Logic
         {
             return _marketRepo.GetMarketById(id);
         }
+
+        public String Test()
+        {
+            return "hello";
+        }
     }
 }

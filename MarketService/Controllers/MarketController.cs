@@ -50,5 +50,12 @@ namespace MarketService.Controllers
         }
 
 
+        [HttpGet]
+        [Route("test")]
+        public ActionResult Test()
+        {
+            return Ok(_marketLogic.Test());
+        }
+        
     }
 }
