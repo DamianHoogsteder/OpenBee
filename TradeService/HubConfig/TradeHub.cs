@@ -14,14 +14,14 @@ namespace TradeService.HubConfig
 
             if (someTextFromClient == "zephtos")
             {
-                tempString = "trade offer from zephtos";
+                tempString = "Trade offer from zephtos";
             }
             else
             {
                 tempString = "no trade offer";
             }
 
-            await Clients.Clients(this.Context.ConnectionId).SendAsync("askServerResponse", tempString);
+            await Clients.All.SendAsync("askServerResponse", tempString);
         }
     }
 }
