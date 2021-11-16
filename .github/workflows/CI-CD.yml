@@ -5,8 +5,10 @@ on:
     branches:
       - main
       - ci-cd-tests
+      - development
   pull_request:
-    branches: [ main ]
+    branches: 
+      - development
 
 env:
   PROJECT_PATH: 'MarketService/MarketService.csproj'
