@@ -10,5 +10,6 @@ namespace MarketService.DAL.ItemData
     {
         IEnumerable<Items> GetAllItems();
         Items GetItemById(int id);
+        Items addItem(Items item);
     }
 }

@@ -25,5 +25,10 @@ namespace MarketService.Logic
         {
             return _itemRepo.GetItemById(id);
         }
+
+        public Items AddItem(Items item)
+        {
+            return _itemRepo.addItem(item);
+        }
     }
 }

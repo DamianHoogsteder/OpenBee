@@ -25,5 +25,12 @@ namespace MarketService.DAL.ItemData
             return _context.Items.FirstOrDefault(i => i.ID == id);
         }
 
+        public Items addItem(Items item)
+        {
+            _context.Items.Add(item);
+            _context.SaveChanges();
+            return item; 
+        }
+
     }
 }
