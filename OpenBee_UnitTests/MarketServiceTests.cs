@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace OpenBee_UnitTests
 {
     [TestClass]
-    public class UnitTest1
+    public class MarketServiceTests
     {
         [TestMethod]
         public void TestMethod1()
