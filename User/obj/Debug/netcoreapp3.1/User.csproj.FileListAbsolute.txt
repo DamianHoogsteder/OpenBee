@@ -1,0 +1,15 @@
+C:\Users\Damia\source\repositories\OpenBee\User\bin\Debug\netcoreapp3.1\appsettings.Development.json
+C:\Users\Damia\source\repositories\OpenBee\User\bin\Debug\netcoreapp3.1\appsettings.json
+C:\Users\Damia\source\repositories\OpenBee\User\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Damia\source\repositories\OpenBee\User\bin\Debug\netcoreapp3.1\User.exe
+C:\Users\Damia\source\repositories\OpenBee\User\obj\Debug\netcoreapp3.1\User.csprojAssemblyReference.cache
+C:\Users\Damia\source\repositories\OpenBee\User\obj\Debug\netcoreapp3.1\User.AssemblyInfoInputs.cache
+C:\Users\Damia\source\repositories\OpenBee\User\obj\Debug\netcoreapp3.1\User.AssemblyInfo.cs
+C:\Users\Damia\source\repositories\OpenBee\User\obj\Debug\netcoreapp3.1\User.RazorTargetAssemblyInfo.cache
+C:\Users\Damia\source\repositories\OpenBee\User\obj\Debug\netcoreapp3.1\staticwebassets\User.StaticWebAssets.Manifest.cache
+C:\Users\Damia\source\repositories\OpenBee\User\obj\Debug\netcoreapp3.1\staticwebassets\User.StaticWebAssets.xml
+C:\Users\Damia\source\repositories\OpenBee\User\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
+C:\Users\Damia\source\repositories\OpenBee\User\bin\Debug\netcoreapp3.1\EntityFramework.dll
+C:\Users\Damia\source\repositories\OpenBee\User\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Damia\source\repositories\OpenBee\User\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Damia\source\repositories\OpenBee\User\obj\Debug\netcoreapp3.1\User.csproj.CopyComplete

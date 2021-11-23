@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace UserService.Models
 {
-    public class User : IdentityUser
+    public class User
     {
         [Key]
         [Required]

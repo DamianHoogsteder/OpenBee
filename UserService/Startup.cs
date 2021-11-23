@@ -36,12 +36,6 @@ namespace UserService
             //Injecting AppSettings
             services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
 
-            services.AddIdentityCore<User>();
-            services.AddDbContext<UserDatabaseContext>(options =>
-            {
-                options.UseSqlServer(Configuration.GetConnectionString("Default"))
-            });
-
             //Configuring Cors
             services.AddCors(options =>
             {
@@ -51,10 +45,10 @@ namespace UserService
                 });
             });
             services.AddControllers();
-            //services.AddDbContext<UserContext>
-            //    (
-            //    opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")
-            //    ));
+            services.AddDbContext<UserContext>
+                (
+                opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")
+                ));
 
             //Jwt Authentication
 
