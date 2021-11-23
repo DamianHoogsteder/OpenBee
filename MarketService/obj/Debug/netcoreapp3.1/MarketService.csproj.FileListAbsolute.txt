@@ -316,7 +316,6 @@ C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1
 C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.csprojAssemblyReference.cache
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.AssemblyInfoInputs.cache
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.AssemblyInfo.cs
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.csproj.CoreCompileInputs.cache

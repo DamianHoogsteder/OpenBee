@@ -1,0 +1,2 @@
+C:\Users\Damia\source\repositories\OpenBee\OpenBee_UnitTests\obj\Debug\OpenBee_UnitTests.csprojAssemblyReference.cache
+C:\Users\Damia\source\repositories\OpenBee\OpenBee_UnitTests\obj\Debug\OpenBee_UnitTests.csproj.CoreCompileInputs.cache
