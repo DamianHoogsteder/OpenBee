@@ -1,14 +1,14 @@
-﻿using Microsoft.AspNet.Identity.EntityFramework;
-using Microsoft.EntityFrameworkCore;
+﻿using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using UserService.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace UserService.DAL
 {
-    public class UserContext : DbContext
+    public class UserContext : IdentityDbContext
     {
         public UserContext(DbContextOptions opt):base(opt)
         {

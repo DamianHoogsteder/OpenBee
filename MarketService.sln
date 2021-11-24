@@ -14,6 +14,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TradeService", "TradeServic
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UserService", "UserService\UserService.csproj", "{BD4F27E4-0156-4624-92DA-21084ECEC559}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UserApp", "UserApp\UserApp.csproj", "{DE66B7BF-EF1C-4E50-A495-38C9C5A2FDA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -36,6 +38,10 @@ Global
 		{BD4F27E4-0156-4624-92DA-21084ECEC559}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BD4F27E4-0156-4624-92DA-21084ECEC559}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BD4F27E4-0156-4624-92DA-21084ECEC559}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE66B7BF-EF1C-4E50-A495-38C9C5A2FDA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE66B7BF-EF1C-4E50-A495-38C9C5A2FDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE66B7BF-EF1C-4E50-A495-38C9C5A2FDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE66B7BF-EF1C-4E50-A495-38C9C5A2FDA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

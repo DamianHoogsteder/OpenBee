@@ -17,7 +17,8 @@ using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 using UserService.DAL;
 using UserService.Models;
-using Microsoft.AspNet.Identity.EntityFramework;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.UI;
 
 namespace UserService
 {
@@ -36,6 +37,7 @@ namespace UserService
             //Injecting AppSettings
             services.Configure<ApplicationSettings>(Configuration.GetSection("ApplicationSettings"));
 
+
             //Configuring Cors
             services.AddCors(options =>
             {
@@ -50,8 +52,9 @@ namespace UserService
                 opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")
                 ));
 
-            //Jwt Authentication
+            services.AddDefaultIdentity<User>().AddEntityFrameworkStores<UserContext>();
 
+            //Jwt Authentication
             var key = Encoding.UTF8.GetBytes(Configuration["ApplicationSettings:JWT_SECRET"].ToString());
 
             services.AddAuthentication(x =>
@@ -86,6 +89,7 @@ namespace UserService
             app.UseRouting();
             app.UseCors("CorsDevelopment");
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

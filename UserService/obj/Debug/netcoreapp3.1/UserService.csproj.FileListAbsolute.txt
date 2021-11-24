@@ -63,9 +63,11 @@ C:\Users\Damia\source\repositories\OpenBee\UserService\obj\Debug\netcoreapp3.1\U
 C:\Users\Damia\source\repositories\OpenBee\UserService\obj\Debug\netcoreapp3.1\UserService.genruntimeconfig.cache
 C:\Users\Damia\source\repositories\OpenBee\UserService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\Users\Damia\source\repositories\OpenBee\UserService\obj\Debug\netcoreapp3.1\UserService.csprojAssemblyReference.cache
+C:\Users\Damia\source\repositories\OpenBee\UserService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Damia\source\repositories\OpenBee\UserService\bin\Debug\netcoreapp3.1\UserService.StaticWebAssets.xml
+C:\Users\Damia\source\repositories\OpenBee\UserService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\Damia\source\repositories\OpenBee\UserService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\Damia\source\repositories\OpenBee\UserService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
 C:\Users\Damia\source\repositories\OpenBee\UserService\obj\Debug\netcoreapp3.1\UserService.csproj.CoreCompileInputs.cache
+C:\Users\Damia\source\repositories\OpenBee\UserService\obj\Debug\netcoreapp3.1\UserService.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Damia\source\repositories\OpenBee\UserService\obj\Debug\netcoreapp3.1\UserService.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Damia\source\repositories\OpenBee\UserService\bin\Debug\netcoreapp3.1\EntityFramework.SqlServer.dll
-C:\Users\Damia\source\repositories\OpenBee\UserService\bin\Debug\netcoreapp3.1\EntityFramework.dll
-C:\Users\Damia\source\repositories\OpenBee\UserService\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.Core.dll
-C:\Users\Damia\source\repositories\OpenBee\UserService\bin\Debug\netcoreapp3.1\Microsoft.AspNet.Identity.EntityFramework.dll

@@ -24,13 +24,36 @@ namespace UserService
             _appSettings = appSettings.Value;
         }
 
+
+        [HttpPost]
+        [Route("/Register")]
+        //POST : /Register
+        public async Task<Object> PostApplicationUser(User model)
+        {
+            var applicationUser = new User()
+            {
+                UserName = model.UserName
+            };
+
+            try
+            {
+                var result = await _userManager.CreateAsync(applicationUser, model.Password);
+                return Ok(result);
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
         [HttpPost]
         [Route("Login")]
         public async Task<IActionResult> Login(User userModel)
         {
             var user = await _userManager.FindByNameAsync(userModel.Username);
 
-            if (user != null && await _userManager.CheckPasswordAsync(user, userModel.Password))
+            if (user != null && await _userManager.CheckPasswordAsync(user, userModel.Password))    
             {
                 var tokenDescriptor = new SecurityTokenDescriptor
                 {
