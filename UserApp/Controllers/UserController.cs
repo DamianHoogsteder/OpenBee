@@ -24,7 +24,7 @@ namespace UserApp.Controllers
 
         [HttpPost]
         [Route("Register")]
-        //POST : /api/ApplicationUser/Register
+        //POST : /Register
         public async Task<Object> PostApplicationUser(UserModel model)
         {
             var applicationUser = new User()
