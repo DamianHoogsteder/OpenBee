@@ -21,6 +21,11 @@ namespace MarketService.Logic
             return _itemRepo.GetAllItems();
         }
 
+        public IEnumerable<Items> GetAllItemsByUserId(string userID)
+        {
+            return _itemRepo.GetAllItemsByUserID(userID);
+        }
+
         public Items GetItemByID(int id)
         {
             return _itemRepo.GetItemById(id);

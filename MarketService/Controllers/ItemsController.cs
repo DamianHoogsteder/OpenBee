@@ -6,7 +6,11 @@ using AutoMapper;
 using MarketService.DAL;
 using MarketService.Logic;
 using MarketService.Models;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using UserApp.Models;
 
 namespace MarketService.Controllers
 {
@@ -16,11 +20,14 @@ namespace MarketService.Controllers
     {
         private readonly ItemLogic _itemLogic;
         private readonly IMapper _mapper;
+        private UserManager<User> _userManager;
 
-        public ItemsController(ItemLogic itemLogic, IMapper mapper)
+
+        public ItemsController(ItemLogic itemLogic, IMapper mapper, UserManager<User> userManager)
         {
             _itemLogic = itemLogic;
             _mapper = mapper;
+            _userManager = userManager;
         }
 
         [HttpGet]
@@ -29,6 +36,18 @@ namespace MarketService.Controllers
             var marketItems = _itemLogic.GetAllItems();
 
             return Ok(marketItems);
+        }
+
+        [HttpGet]
+        [Route("user")]
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public ActionResult GetAllItemsByUserID()
+        {
+            string userId = User.Claims.FirstOrDefault(c => c.Type == "UserId").Value;
+
+            var Items = _itemLogic.GetAllItemsByUserId(userId);
+
+            return Ok(Items);
         }
 
         [HttpGet]

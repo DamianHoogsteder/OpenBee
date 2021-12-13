@@ -318,8 +318,6 @@ C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1
 C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.AssemblyInfoInputs.cache
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.AssemblyInfo.cs
-C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.csproj.CoreCompileInputs.cache
-C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.RazorTargetAssemblyInfo.cache
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.csproj.CopyComplete
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\staticwebassets\MarketService.StaticWebAssets.Manifest.cache
@@ -327,3 +325,17 @@ C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.dll
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.pdb
 C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.genruntimeconfig.cache
+C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.csprojAssemblyReference.cache
+C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.csproj.CoreCompileInputs.cache
+C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Damia\source\repositories\OpenBee\MarketService\obj\Debug\netcoreapp3.1\MarketService.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\UserApp.StaticWebAssets.xml
+C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\UserApp.exe
+C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\MarketService.StaticWebAssets.xml
+C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V3.dll
+C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.Views.V4.dll
+C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\UserApp.dll
+C:\Users\Damia\source\repositories\OpenBee\MarketService\bin\Debug\netcoreapp3.1\UserApp.pdb
