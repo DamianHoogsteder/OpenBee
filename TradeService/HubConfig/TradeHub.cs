@@ -8,6 +8,7 @@ namespace TradeService.HubConfig
 {
     public class TradeHub : Hub
     {
+
         public async Task askServer(string someTextFromClient)
         {
             string tempString;
@@ -21,7 +22,12 @@ namespace TradeService.HubConfig
                 tempString = "no trade offer";
             }
 
-            await Clients.All.SendAsync("askServerResponse", tempString);
+            await Clients.Groups().SendAsync("askServerResponse", tempString);
+        }
+
+        public Task JoinGroup(string groupName)
+        {
+            return Groups.AddToGroupAsync(Context.ConnectionId, groupName);
         }
     }
 }
