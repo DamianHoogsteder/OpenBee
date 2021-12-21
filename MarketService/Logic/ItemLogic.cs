@@ -35,5 +35,10 @@ namespace MarketService.Logic
         {
             return _itemRepo.addItem(item);
         }
+
+        public void PutUpForSale(Items item)
+        {
+            _itemRepo.PutUpForSale(item);
+        }
     }
 }

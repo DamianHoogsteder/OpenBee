@@ -12,6 +12,7 @@ namespace MarketService.DAL.ItemData
         IEnumerable<Items> GetAllItemsByUserID(string userID);
         Items GetItemById(int id);
         Items addItem(Items item);
+        void PutUpForSale(Items item);
 
     }
 }

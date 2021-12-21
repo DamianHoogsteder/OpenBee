@@ -37,5 +37,11 @@ namespace MarketService.DAL.ItemData
             return item; 
         }
 
+        public void PutUpForSale(Items item)
+        {
+            _context.Items.Update(item);
+            _context.SaveChanges();
+        }
+
     }
 }

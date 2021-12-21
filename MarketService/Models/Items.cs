@@ -17,9 +17,12 @@ namespace MarketService.Models
         [Required]
         public int Price { get; set; }
         [Required]
+
         public int marketId { get; set; }
         public string Logo { get; set; }
         public string UserId { get; set; }
+        public bool IsUpForSale { get; set; }
+
         public Items()
         {
 

@@ -60,7 +60,7 @@ namespace MarketService.Controllers
         }
 
         [HttpPost]
-        [Route("sell")]
+        [Route("add")]
         public async Task<ActionResult<Items>> AddItem([FromBody] Items item)
         {
             if (item.Name != null)
@@ -73,5 +73,16 @@ namespace MarketService.Controllers
 
         }
 
+        [HttpPatch]
+        [Route("sell")]
+        public ActionResult PutItemUpForSale([FromBody] Items item)
+        {
+            if (item.IsUpForSale == true)
+            {
+                _itemLogic.PutUpForSale(item);
+                return Ok("Item updatet");
+            }
+            return StatusCode(405, "Update failed, something went wrong.");
+        }
     }
 }
