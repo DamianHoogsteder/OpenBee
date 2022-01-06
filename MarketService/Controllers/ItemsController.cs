@@ -59,10 +59,34 @@ namespace MarketService.Controllers
             return Ok(item);
         }
 
+        [HttpGet]
+        [Route("buy")]
+        public ActionResult GetItemsUpForSale()
+        {
+            var itemList = new List<Items>();
+
+            var items = _itemLogic.GetAllItems();
+
+            foreach (Items item in items)
+            {
+                if (item.IsUpForSale == true)
+                {
+                    itemList.Add(item);
+                }
+            }
+
+            return Ok(itemList);
+        }
+
         [HttpPost]
         [Route("add")]
-        public async Task<ActionResult<Items>> AddItem([FromBody] Items item)
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+        public ActionResult<Items> AddItem([FromBody] Items item)
         {
+            string userId = User.Claims.FirstOrDefault(c => c.Type == "UserId").Value;
+
+            item.UserId = userId;
+
             if (item.Name != null)
             {
                 _itemLogic.AddItem(item);

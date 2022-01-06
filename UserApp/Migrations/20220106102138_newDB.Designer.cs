@@ -10,8 +10,8 @@ using UserApp.Models;
 namespace UserApp.Migrations
 {
     [DbContext(typeof(UserDatabaseContext))]
-    [Migration("20211124125108_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220106102138_newDB")]
+    partial class newDB
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
