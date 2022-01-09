@@ -24,11 +24,25 @@ namespace UserApp.Controllers
 
 
         [HttpGet]
+        [Route("Profile")]
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
         //GET: /User/Profile
         public async Task<Object> GetUserProfile()
         {
             string userId = User.Claims.FirstOrDefault(c => c.Type  == "UserId").Value;
+            var user = await _userManager.FindByIdAsync(userId);
+            return new
+            {
+                user.FullName,
+                user.Email,
+                user.UserName
+            };
+        }
+
+        [HttpGet]
+        [Route("{string}")]
+        public async Task<Object> GetUserById(string userId)
+        {
             var user = await _userManager.FindByIdAsync(userId);
             return new
             {

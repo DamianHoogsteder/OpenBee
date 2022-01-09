@@ -67,8 +67,10 @@ namespace MarketService.Controllers
 
             var items = _itemLogic.GetAllItems();
 
+
             foreach (Items item in items)
             {
+
                 if (item.IsUpForSale == true)
                 {
                     itemList.Add(item);
