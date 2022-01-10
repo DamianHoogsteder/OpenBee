@@ -33,5 +33,13 @@ namespace MarketService.Models
             Description = description;
             Price = price;
         }
+        public Market(int id, string name, string description, int price, IEnumerable<Items> items)
+        {
+            Id = id;
+            Name = name;
+            Description = description;
+            Price = price;
+            Items = items;
+        }
     }
 }

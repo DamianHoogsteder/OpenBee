@@ -44,18 +44,9 @@ namespace MarketService.Controllers
         [Route("{id}/items")]
         public ActionResult GetItemsByMarket(int id)
         {
-            var marketItems = _marketLogic.GetAllItemsByMarketId(id);
+            var marketItems = _marketLogic.GetAllItemsAndMarketByMarketId(id);
 
             return Ok(marketItems);
         }
-
-
-        [HttpGet]
-        [Route("test")]
-        public ActionResult Test()
-        {
-            return Ok(_marketLogic.Test());
-        }
-        
     }
 }

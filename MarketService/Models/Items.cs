@@ -23,6 +23,14 @@ namespace MarketService.Models
         public string UserId { get; set; }
         public bool IsUpForSale { get; set; }
 
+        public Items(int id, string name, string description, int price)
+        {
+            ID = id;
+            Name = name;
+            Description = description;
+            Price = price;
+        }
+
         public Items()
         {
 

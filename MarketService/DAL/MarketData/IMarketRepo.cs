@@ -10,7 +10,8 @@ namespace MarketService.DAL
     {
         //Saving for the entityframework
         bool SaveChanges();
-        IEnumerable<Market> GetAllItemsByMarketId(int id);
+        IEnumerable<Market> GetAllItemsAndMarketByMarketId(int id);
+        IEnumerable<Items> GetAllItemsByMarketId(int id);
         IEnumerable<Market> GetAllMarkets();
         Market GetMarketById(int id);
 

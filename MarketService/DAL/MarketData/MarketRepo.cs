@@ -21,7 +21,12 @@ namespace MarketService.DAL
             return _context.Markets.ToList();
         }
 
-        public IEnumerable<Market> GetAllItemsByMarketId(int id)
+        public IEnumerable<Items> GetAllItemsByMarketId(int id)
+        {
+            return _context.Items.Where(i => i.ID == id);
+        }
+
+        public IEnumerable<Market> GetAllItemsAndMarketByMarketId(int id)
         {
             return _context.Markets.Where(i => i.Id == id).Include(m => m.Items);
         }
