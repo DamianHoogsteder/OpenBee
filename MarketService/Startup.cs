@@ -18,7 +18,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
-using UserApp.Models;
+//using UserApp.Models;
 
 namespace MarketService
 {
@@ -48,12 +48,12 @@ namespace MarketService
                 opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")
                 ));
 
-            services.AddDbContext<UserDatabaseContext>
-             (
-                opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")
-             ));
+            //services.AddDbContext<UserDatabaseContext>
+            // (
+            //    opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")
+            // ));
 
-            services.AddTransient<UserDatabaseContext>();
+           //services.AddTransient<UserDatabaseContext>();
 
 
             services.AddScoped<IMarketRepo, MarketRepo>();
@@ -63,7 +63,7 @@ namespace MarketService
             services.AddScoped<ItemLogic>();
             
 
-            services.AddDefaultIdentity<User>().AddEntityFrameworkStores<UserDatabaseContext>().AddDefaultTokenProviders();
+            //services.AddDefaultIdentity<User>().AddEntityFrameworkStores<UserDatabaseContext>().AddDefaultTokenProviders();
 
             services.Configure<IdentityOptions>(options =>
             {
