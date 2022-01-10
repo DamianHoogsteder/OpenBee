@@ -9,13 +9,13 @@ namespace TradeService.HubConfig
     public class TradeHub : Hub
     {
 
-        public async Task askServer(string someTextFromClient)
+        public async Task askServer(string username, string itemOffered)
         {
             string tempString;
 
-            if (someTextFromClient == "zephtos")
+            if (username != null )
             {
-                tempString = "Trade offer from zephtos";
+                tempString = "Trade offer from " + username + " for " + itemOffered;
             }
             else
             {
