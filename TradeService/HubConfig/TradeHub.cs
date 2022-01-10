@@ -22,7 +22,7 @@ namespace TradeService.HubConfig
                 tempString = "no trade offer";
             }
 
-            //await Clients.Groups().SendAsync("askServerResponse", tempString);
+            await Clients.All.SendAsync("askServerResponse", tempString);
         }
 
         public Task JoinGroup(string groupName)

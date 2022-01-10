@@ -40,10 +40,11 @@ namespace UserApp.Controllers
         }
 
         [HttpGet]
-        [Route("{string}")]
-        public async Task<Object> GetUserById(string userId)
-        {
-            var user = await _userManager.FindByIdAsync(userId);
+        [Route("{id}")]
+        public async Task<Object> GetUserById(string id)
+          {
+            var user = await _userManager.FindByIdAsync(id);
+
             return new
             {
                 user.FullName,
