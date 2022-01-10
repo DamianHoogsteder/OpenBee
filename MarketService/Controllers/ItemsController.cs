@@ -10,7 +10,6 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
-using UserApp.Models;
 
 namespace MarketService.Controllers
 {
@@ -20,14 +19,11 @@ namespace MarketService.Controllers
     {
         private readonly ItemLogic _itemLogic;
         private readonly IMapper _mapper;
-        private UserManager<User> _userManager;
 
-
-        public ItemsController(ItemLogic itemLogic, IMapper mapper, UserManager<User> userManager)
+        public ItemsController(ItemLogic itemLogic, IMapper mapper)
         {
             _itemLogic = itemLogic;
             _mapper = mapper;
-            _userManager = userManager;
         }
 
         [HttpGet]
