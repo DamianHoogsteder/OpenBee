@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace MarketService
 {
-    public class Program
+    public static class Program
     {
         public static void Main(string[] args)
         {
@@ -20,7 +20,6 @@ namespace MarketService
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.UseSetting("https_port", "8080");
                     webBuilder.UseStartup<Startup>();
                 });
     }

@@ -9,7 +9,7 @@ namespace MarketService.Logic
 {
     public class ItemLogic
     {
-        IItemRepo _itemRepo;
+        readonly IItemRepo _itemRepo;
 
         public ItemLogic(IItemRepo itemRepo)
         {
@@ -21,9 +21,24 @@ namespace MarketService.Logic
             return _itemRepo.GetAllItems();
         }
 
+        public IEnumerable<Items> GetAllItemsByUserId(string userID)
+        {
+            return _itemRepo.GetAllItemsByUserID(userID);
+        }
+
         public Items GetItemByID(int id)
         {
             return _itemRepo.GetItemById(id);
+        }
+
+        public Items AddItem(Items item)
+        {
+            return _itemRepo.addItem(item);
+        }
+
+        public void PutUpForSale(Items item)
+        {
+            _itemRepo.PutUpForSale(item);
         }
     }
 }

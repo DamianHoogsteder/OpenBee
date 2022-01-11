@@ -1,4 +1,5 @@
-﻿using MarketService.DAL;
+﻿using AutoMapper;
+using MarketService.DAL;
 using MarketService.Models;
 using System;
 using System.Collections.Generic;
@@ -9,11 +10,13 @@ namespace MarketService.Logic
 {
     public class MarketLogic
     {
-        IMarketRepo _marketRepo;
+        readonly IMarketRepo _marketRepo;
+        readonly IMapper _automapper;
 
-        public MarketLogic(IMarketRepo marketRepo)
+        public MarketLogic(IMarketRepo marketRepo, IMapper mapper)
         {
             _marketRepo = marketRepo;
+            _automapper = mapper;
         }
 
         public IEnumerable<Market> GetAllMarkets()
@@ -21,7 +24,12 @@ namespace MarketService.Logic
             return _marketRepo.GetAllMarkets();
         }
 
-        public IEnumerable<Market> GetAllItemsByMarketId(int id)
+        public IEnumerable<Market> GetAllItemsAndMarketByMarketId(int id)
+        {
+            return _marketRepo.GetAllItemsAndMarketByMarketId(id);
+        }
+
+        public IEnumerable<Items> GetAllItemsByMarketId(int id)
         {
             return _marketRepo.GetAllItemsByMarketId(id);
         }

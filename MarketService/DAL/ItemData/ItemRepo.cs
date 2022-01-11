@@ -20,9 +20,27 @@ namespace MarketService.DAL.ItemData
             return _context.Items.ToList();
         }
 
+        public IEnumerable<Items> GetAllItemsByUserID(string userID)
+        {
+            return _context.Items.Where(i => i.UserId == userID).ToList();
+        }
+
         public Items GetItemById(int id)
         {
             return _context.Items.FirstOrDefault(i => i.ID == id);
+        }
+
+        public Items addItem(Items item)
+        {
+            _context.Items.Add(item);
+            _context.SaveChanges();
+            return item; 
+        }
+
+        public void PutUpForSale(Items item)
+        {
+            _context.Items.Update(item);
+            _context.SaveChanges();
         }
 
     }

@@ -15,7 +15,7 @@ namespace MarketService.Controllers
     public class MarketController : ControllerBase
     {
         private readonly MarketLogic _marketLogic;
-        private readonly IMapper _mapper;
+        private IMapper _mapper;
 
         public MarketController(MarketLogic marketLogic, IMapper mapper)
         {
@@ -44,11 +44,9 @@ namespace MarketService.Controllers
         [Route("{id}/items")]
         public ActionResult GetItemsByMarket(int id)
         {
-            var marketItems = _marketLogic.GetAllItemsByMarketId(id);
+            var marketItems = _marketLogic.GetAllItemsAndMarketByMarketId(id);
 
             return Ok(marketItems);
         }
-
-
     }
 }
