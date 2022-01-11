@@ -15,7 +15,7 @@ namespace MarketService.Controllers
     public class MarketController : ControllerBase
     {
         private readonly MarketLogic _marketLogic;
-        private readonly IMapper _mapper;
+        private IMapper _mapper;
 
         public MarketController(MarketLogic marketLogic, IMapper mapper)
         {

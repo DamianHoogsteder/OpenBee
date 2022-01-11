@@ -9,7 +9,7 @@ namespace MarketService.Logic
 {
     public class ItemLogic
     {
-        IItemRepo _itemRepo;
+        readonly IItemRepo _itemRepo;
 
         public ItemLogic(IItemRepo itemRepo)
         {

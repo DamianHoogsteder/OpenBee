@@ -10,8 +10,8 @@ namespace MarketService.Logic
 {
     public class MarketLogic
     {
-        IMarketRepo _marketRepo;
-        IMapper _automapper;
+        readonly IMarketRepo _marketRepo;
+        readonly IMapper _automapper;
 
         public MarketLogic(IMarketRepo marketRepo, IMapper mapper)
         {
