@@ -43,10 +43,15 @@ namespace MarketService
                 });
             });
             services.AddControllers();
-            services.AddDbContext<MarketDatabaseContext>
-                (
-                opt => opt.UseSqlServer(Configuration.GetConnectionString("Default")
-                ));
+            services.AddDbContext<MarketDatabaseContext>(opt =>
+            {
+                opt.UseSqlServer(Configuration.GetConnectionString("Default"),
+                    sqlServerOptionsAction: sqlOptions =>
+                    {
+                        sqlOptions.EnableRetryOnFailure();
+                    });
+                  
+            });
 
             //services.AddDbContext<UserDatabaseContext>
             // (
